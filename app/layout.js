@@ -12,14 +12,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-      <div className='relative z-0 bg-primary'>
+      <body className='relative z-0 bg-primary'>
+      
         <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-        <Navbar/>
-        {children}
+          <Navbar/>
+          {children}
         </div>
-      </div>  
-        </body>
+    
+      </body>
     </html>
   )
 }
