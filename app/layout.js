@@ -1,6 +1,7 @@
 
 import Navbar from '@/components/Navbar'
 import './globals.css'
+import Hero from '@/components/Hero'
 
 
 
@@ -12,14 +13,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className='relative z-0 bg-primary'>
-      
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+      <body>
+        <div className='relative z-0 bg-primary'>
+         
           <Navbar/>
+            
           {children}
         </div>
-    
       </body>
     </html>
   )
 }
+

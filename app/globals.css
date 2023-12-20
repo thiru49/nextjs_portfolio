@@ -13,6 +13,12 @@
   color-scheme: dark;
 }
 
+@layer utilities {
+  .section {
+    @apply sm:px-16 px-6 py-24 max-w-7xl mx-auto relative z-0 xl:h-screen;
+  }
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;

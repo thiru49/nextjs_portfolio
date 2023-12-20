@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className='w-full flex justify-between items-center max-w-7xl'>
         <Link href='/' passHref>
           <div className='flex items-center gap-2'>
-            <Image src={logo} className='w-9 h-9 object-contain' />
+            <Image src={logo} className='w-9 h-9 object-contain' priority/>
             <p className='text-white flex gap-1 text-[18px] font-bold cursor-pointer'>
               <span>R</span>
               <span className='sm:block hidden'>Thiruppathi</span>
@@ -42,7 +42,7 @@ const Navbar = () => {
            <ul className='list-none flex justify-end items-start flex-col gap-4'>
           {navLinks.map((link) => (
             <li
-              key={link.id}
+              key={link.href}
               className={`${
                 active === link.title ? 'text-white' : 'text-secondary'
               } font-poppins font-medium text-[16px] cursor-pointer`}
